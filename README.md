@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Para Donita 💖</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(#ffdde1, #ee9ca7);
-            text-align: center;
-            padding-top: 80px;
-        }
 
-       
-</head>
-<body>
 
 <h1>💘 Donita 💘</h1>
 <p>¿Quieres ser mi San Valentín?</p>
