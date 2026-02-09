@@ -11,28 +11,7 @@
             padding-top: 80px;
         }
 
-        h1 {
-            color: #b30059;
-        }
-
-        button {
-            padding: 15px 25px;
-            margin: 10px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .opcion {
-            background-color: #ff4d88;
-            color: white;
-        }
-
-        .opcion:hover {
-            background-color: #ff1a66;
-        }
-    </style>
+       
 </head>
 <body>
 
