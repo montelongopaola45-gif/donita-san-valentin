@@ -1,4 +1,41 @@
+[donita_san_valentin1.html](https://github.com/user-attachments/files/25195654/donita_san_valentin1.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Donita 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ffdde1, #ee9ca7);
+            text-align: center;
+            padding-top: 80px;
+        }
 
+        h1 {
+            color: #b30059;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .opcion {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .opcion:hover {
+            background-color: #ff1a66;
+        }
+    </style>
+</head>
+<body>
 
 <h1>💘 Donita 💘</h1>
 <p>¿Quieres ser mi San Valentín?</p>
