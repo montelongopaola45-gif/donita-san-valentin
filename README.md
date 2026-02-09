@@ -1,72 +1,63 @@
-[donita_san_valentin.html](https://github.com/user-attachments/files/25195483/donita_san_valentin.html)
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>💖 Para Donita 💖</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 350px;
-      text-align: center;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-    h1 { color: #e91e63; }
-    button {
-      background: #e91e63;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      margin: 8px;
-      border-radius: 20px;
-      font-size: 15px;
-    }
-    button:hover { background: #c2185b; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Para Donita 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ffdde1, #ee9ca7);
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h1 {
+            color: #b30059;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .opcion {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .opcion:hover {
+            background-color: #ff1a66;
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
-  <h1>💖 Juego del Amor 💖</h1>
-  <p id="q">Hola Donita 🥰<br>¿Lista para jugar?</p>
-  <div id="buttons">
-    <button onclick="next()">Sí 💕</button>
-  </div>
+<h1>💘 Donita 💘</h1>
+<p>¿Quieres ser mi San Valentín?</p>
+
+<div id="botones">
+    <button class="opcion" onclick="respuestaIncorrecta()">Tal vez 🤔</button>
+    <button class="opcion" onclick="respuestaIncorrecta()">No 😅</button>
+    <button class="opcion" onclick="respuestaCorrecta()">Sí 💖</button>
+    <button class="opcion" onclick="respuestaIncorrecta()">Sorpréndeme 😳</button>
 </div>
 
 <script>
-const questions = [
-  "¿Quién dio el primer beso? 💋",
-  "¿Cuál fue nuestra primera date? 💑",
-  "¿Quién es más dependiente de la otra? 😅",
-  "¿Quién dijo “te amo” primero? ❤️",
-  "¿A quién le gusta más molestar a la otra? 😂",
-  "Donita… ¿quieres ser mi San Valentín? 💘"
-];
+    function respuestaCorrecta() {
+        document.body.innerHTML = `
+            <h1>💖 ¡Sabía que dirías que sí! 💖</h1>
+            <p>Eres lo mejor que me ha pasado 💕</p>
+            <p>Te amo Donita 🥰</p>
+        `;
+    }
 
-let i = 0;
-
-function next() {
-  if (i < questions.length) {
-    document.getElementById("q").innerText = questions[i];
-    i++;
-  } else {
-    document.querySelector(".card").innerHTML =
-      "<h1>💘 Feliz San Valentín 💘</h1><p>Te amo muchísimo Donita 🥰<br>Gracias por existir ❤️</p>";
-  }
-}
+    function respuestaIncorrecta() {
+        alert("Esa no es la respuesta correcta 😜 intenta otra vez 💕");
+    }
 </script>
 
 </body>
