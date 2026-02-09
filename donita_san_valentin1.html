@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Donita 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ffdde1, #ee9ca7);
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h1 {
+            color: #b30059;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .opcion {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .opcion:hover {
+            background-color: #ff1a66;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💘 Donita 💘</h1>
+<p>¿Quieres ser mi San Valentín?</p>
+
+<div id="botones">
+    <button class="opcion" onclick="respuestaIncorrecta()">Tal vez 🤔</button>
+    <button class="opcion" onclick="respuestaIncorrecta()">No 😅</button>
+    <button class="opcion" onclick="respuestaCorrecta()">Sí 💖</button>
+    <button class="opcion" onclick="respuestaIncorrecta()">Sorpréndeme 😳</button>
+</div>
+
+<script>
+    function respuestaCorrecta() {
+        document.body.innerHTML = `
+            <h1>💖 ¡Sabía que dirías que sí! 💖</h1>
+            <p>Eres lo mejor que me ha pasado 💕</p>
+            <p>Te amo Donita 🥰</p>
+        `;
+    }
+
+    function respuestaIncorrecta() {
+        alert("Esa no es la respuesta correcta 😜 intenta otra vez 💕");
+    }
+</script>
+
+</body>
+</html>
